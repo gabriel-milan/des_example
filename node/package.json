@@ -1,0 +1,18 @@
+{
+  "name": "des_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [
+    "esp8266",
+    "DES"
+  ],
+  "author": "gabriel-milan",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}
