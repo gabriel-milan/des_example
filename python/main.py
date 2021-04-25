@@ -14,8 +14,6 @@ def decrypt(cipher_text):
     i = 0
     output = ""
     while (len(inp) - i) >= 8:
-        print((inp[i:i+8]).hex())
-        print(des.decrypt(inp[i:i+8]).hex())
         output += des.decrypt(inp[i:i+8]).decode()
         i += 8
     return output[:output.find("\x00")]
@@ -46,3 +44,7 @@ def test():
     print(f"Expected output: {sample_text}")
     print(f"Real output: {decrypt(sample_cipher_text)}")
     print(f"Matches: {sample_text == decrypt(sample_cipher_text)}")
+
+
+if __name__ == "__main__":
+    test()
